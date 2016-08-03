@@ -16,6 +16,9 @@ This is an implementation in `c++` of the particle tracking algorithms developed
 
 * [Rectangle_fit](https://github.com/harukihirasawa/Rectangle_fit) can handle rod
 
+* [TubeTK](https://github.com/KitwareMedical/TubeTK) is an open-source toolkit for the segmentation, registration, and analysis of tubes and surfaces in images, developed by Kitware, Inc.
+
+
 ## movie/image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library.
 
@@ -38,3 +41,6 @@ $ pdftocairo -svg input.pdf
 ## Thesis
 * W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
 * This thesis (https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
+
+## Online learning materials
+* [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
