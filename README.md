@@ -18,7 +18,6 @@ This is an implementation in `c++` of the particle tracking algorithms developed
 
 * [TubeTK](https://github.com/KitwareMedical/TubeTK) is an open-source toolkit for the segmentation, registration, and analysis of tubes and surfaces in images, developed by Kitware, Inc.
 
-
 ## movie/image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library.
 
@@ -28,15 +27,16 @@ This is an implementation in `c++` of the particle tracking algorithms developed
 ```
 $ pdftocairo -svg input.pdf
 ```
+* [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface.
 
 ## Big data visualization
 * [Bokeh](https://github.com/bokeh/bokeh) is a `python` project which targets browser-based graphics, and recent releases are beginning to do big data in the browser the right way. 
 * [VisPy](https://github.com/vispy/vispy) is another effort to provide easy visualization of large datasets with `python`. It is based on `OpenGL`, with plans to add a `WebGL` backend.
-* [mpld3](https://github.com/mpld3/mpld3) brings together `Matplotlib`, the popular `Python`-based graphing library, and `D3js`, the popular Javascript library for creating interactive data,  which can output SVG files. The library may require a little knowledge on javascript to enable flexible functions. It provides an interactive way to data visualization, rather than aiming on big data.
+* [mpld3](https://github.com/mpld3/mpld3) brings together `Matplotlib`, the popular `Python`-based graphing library, and `D3js`, the popular Javascript library for creating interactive data,  which can output SVG files. The library may require a little knowledge on javascript to enable flexible functions. It provides an interactive way to data visualization, rather than aiming on big data. d3.js gallery: https://github.com/d3/d3/wiki/Gallery. An example can be found: Visualizing MBTA Data: http://mbtaviz.github.io/
 
 ## Crystal defect identification
 * [BiDef](https://github.com/mskarlin/BiDef]) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
-* [Atoman][https://github.com/chrisdjscott/Atoman] provides a python wrapper (written by C extension) on voro++, and algorithms to detect point defects by voronoi.
+* [Atoman](https://github.com/chrisdjscott/Atoman) provides a python wrapper (written by C extension) on voro++, and algorithms to detect point defects by voronoi.
 
 ## Thesis
 * W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
