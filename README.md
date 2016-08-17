@@ -1,6 +1,6 @@
 # resourceForSoftMatter
 
-online resource for soft matter (colloid) research
+free online resource for soft matter (colloid) research
 
 ## particle tracking
 * [trackpy](https://github.com/ronojoy/trackpy)
@@ -52,3 +52,6 @@ $ pdftocairo -svg input.pdf
 
 ## Online learning materials
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
+
+## Latex
+* [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
