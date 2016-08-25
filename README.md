@@ -32,9 +32,9 @@ This is an implementation in `c++` of the particle tracking algorithms developed
 * ImageMagick (www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
 
 * [Inkscape](https://www.inkscape.org/) is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. It can be used to extract and edit figures from scientific papers in PDF format. Its default format is SVG. To convert pdf figures to SVG, one can use `pdftocairo` which has been installed on most Linux computers:
-```
+ ```
 $ pdftocairo -svg input.pdf
-```
+ ```
 * [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface.
 
 ## Big data visualization
@@ -53,7 +53,7 @@ $ pdftocairo -svg input.pdf
 ## Online learning materials
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
 
-## Latex
+## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
 
 * [Overleaf](https://www.overleaf.com/) is an online `LaTeX` and Rich Text collaborative writing and publishing tool that makes the whole process of writing, editing and publishing scientific documents much quicker and easier. 
@@ -61,6 +61,16 @@ $ pdftocairo -svg input.pdf
 * [Overleaf templates](https://www.overleaf.com/latex/templates/): Start your projects with quality LaTeX templates for journals, CVs, resumes, papers, presentations, assignments, letters, project reports, and more. 
 
 * [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
+
+* merge PDF files:
+ * `pdfunite` is a part of poppler, however, someone pointed out that the output.pdf may be very large while `gs` packs a small size.
+ ```
+$ pdfunite in1.pdf in2.pdf out.pdf
+ ```
+ * use `gs`
+ ```
+$ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
+ ```
 
 ## Useful algorithms
 * [k-d tree](https://en.wikipedia.org/wiki/K-d_tree) is a space-partitioning data structure for organizing points in a k-dimensional space. It is useful to obtain nearest neighbors with an O(log n) complexity. `scipy.spatial.KDTree` and `scipy.spatial.cKDTree` are two very fast implementations in python and C. (https://github.com/prody/ProDy/tree/master/prody/kdtree) has an implementation of kd-tree which can handle periodic boundary condition. A more general algorithm is `cover tree` which can handle any distance metric in arbitary high dimensional space. There are some C++ cover-tree implementations on github. The speed of the algorithm is very fast: one of implementations claimed that it takes 250 seconds for inserting 10^6 1000-dimensional vectors, and achieves 300 queries per second.
