@@ -4,7 +4,7 @@ free online resource for soft matter (colloid) research
 
 ## particle tracking
 * [trackpy](https://github.com/ronojoy/trackpy)
-provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations.
+provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter.
 * Particle Identification and Tracking: Particle Identification and Tracking (tacaswell.github.io/tracking/html/)
 This is an implementation in `c++` of the particle tracking algorithms developed by Croker and Grier.
 
