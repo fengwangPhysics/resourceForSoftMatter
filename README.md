@@ -35,7 +35,7 @@ This is an implementation in `c++` of the particle tracking algorithms developed
  ```
 $ pdftocairo -svg input.pdf
  ```
-* [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface.
+* [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface. It has the same authors as `trackpy`.
 
 ## Big data visualization
 * [Bokeh](https://github.com/bokeh/bokeh) is a `python` project which targets browser-based graphics, and recent releases are beginning to do big data in the browser the right way. 
