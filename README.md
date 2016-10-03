@@ -41,6 +41,9 @@ $ pdftocairo -svg input.pdf
  ```
 * [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface. It has the same authors as `trackpy`.
 
+* [moviepy](https://github.com/Zulko/moviepy)
+is a `Python` module for video editing.  It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
+
 ## Big data visualization
 * [Bokeh](https://github.com/bokeh/bokeh) is a `python` project which targets browser-based graphics, and recent releases are beginning to do big data in the browser the right way. 
 * [VisPy](https://github.com/vispy/vispy) is another effort to provide easy visualization of large datasets with `python`. It is based on `OpenGL`, with plans to add a `WebGL` backend.
