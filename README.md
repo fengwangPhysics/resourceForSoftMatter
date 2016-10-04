@@ -84,4 +84,6 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 
 * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 
-* https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions
+* https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions.
+
+* https://github.com/fengwangPhysics/ctypes-example is an example module to interface python + C via ctypes or python module extensions.
