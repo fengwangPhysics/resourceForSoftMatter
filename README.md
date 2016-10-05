@@ -2,6 +2,17 @@
 
 free online resource for soft matter (colloid) research
 
+## Contents
+* [particle tracking](#particle-tracking)
+* [movie/image](#movieimage)
+* [Big data visualization](#big-data-visualization)
+* [Crystal defect identification](#crystal-defect-identification)
+* [Thesis](#thesis)
+* [Online learning materials](#online-learning-materials)
+* [Latex and PDF files](#latex-and-pdf-files)
+* [Useful data structures and algorithms](#useful-data-structures-and-algorithms)
+
+
 ## particle tracking
 * [trackpy](https://github.com/ronojoy/trackpy)
 provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter.
