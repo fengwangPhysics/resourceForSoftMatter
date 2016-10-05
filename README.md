@@ -78,6 +78,9 @@ is a `Python` module for video editing.  It can read and write all the most comm
 
 * [Overleaf](https://www.overleaf.com/) is an online `LaTeX` and Rich Text collaborative writing and publishing tool that makes the whole process of writing, editing and publishing scientific documents much quicker and easier. 
 
+* https://github.com/jdleesmiller/latex-course
+An interactive introduction to `LaTeX` using [Overleaf](https://www.overleaf.com/).
+
 * [Overleaf templates](https://www.overleaf.com/latex/templates/): Start your projects with quality LaTeX templates for journals, CVs, resumes, papers, presentations, assignments, letters, project reports, and more. 
 
 * [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
