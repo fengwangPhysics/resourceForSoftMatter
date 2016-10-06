@@ -85,6 +85,9 @@ An interactive introduction to `LaTeX` using [Overleaf](https://www.overleaf.com
 
 * [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
 
+* https://github.com/citation-style-language/styles
+Official repository for Citation Style Language (CSL) citation styles.
+
 * merge PDF files:
  * `pdfunite` is a part of poppler, however, someone pointed out that the output.pdf may be very large while `gs` packs a small size.
  ```
