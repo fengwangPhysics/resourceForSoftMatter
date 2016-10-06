@@ -62,6 +62,9 @@ is a `Python` module for video editing.  It can read and write all the most comm
 
 * [OVITO](http://ovito.org/) is a scientific visualization and analysis software for atomistic simulation data developed by Alexander Stukowski at Darmstadt University of Technology, Germany. It can be also used to visualize experimental data if the data is saved as the one of the following formats: LAMMPS, XYZ, IMD, CFG, POSCAR, AMBER/NetCDF, PDB, GSD/HOOMD, and VTK. See the description of those formats: http://ovito.org/manual/usage.import.html
 
+* https://github.com/jbmouret/matplotlib_for_papers
+uses `matplotlib` to plot statistical figures. Good example for box plot, Stars (statistical significance).
+
 ## Crystal defect identification
 * [BiDef](https://github.com/mskarlin/BiDef]) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
 * [Atoman](https://github.com/chrisdjscott/Atoman) provides a python wrapper (written by C extension) on voro++, and algorithms to detect point defects by voronoi.
