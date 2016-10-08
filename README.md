@@ -44,6 +44,8 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
   * H.264 and AAC in MP4
   * WebM
 
+* In PowerPoint 2013 and later, for the best video playback experience, it is recommended to use .mp4 files encoded with H.264 video (a.k.a. MPEG-4 AVC) and AAC audio. For audio, use .m4a files encoded with AAC audio. 
+
 * ImageMagick (www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
 
 * [Inkscape](https://www.inkscape.org/) is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. It can be used to extract and edit figures from scientific papers in PDF format. Its default format is SVG. To convert pdf figures to SVG, one can use `pdftocairo` which has been installed on most Linux computers:
