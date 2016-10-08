@@ -108,6 +108,8 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 
 * [libccd](https://github.com/danfis/libccd) is a library for collision detection between two convex shapes.
 
+* [NVT-GJK](https://github.com/Grieverheart/NVT-GJK) NVT-MC Hard Particle Simulation
+
 * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 
 * https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions.
