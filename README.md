@@ -117,3 +117,5 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 * https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions.
 
 * https://github.com/fengwangPhysics/ctypes-example is an example module to interface python + C via ctypes or python module extensions.
+
+* [Theano](https://github.com/Theano/Theano) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.
