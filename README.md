@@ -80,6 +80,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 ## Online learning materials
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
 
+* [Theoretical model for a binary mixture of oppositely charged colloids with counterions and salt](https://github.com/rjadrich/charged_colloid_mixture_model/blob/master/charged_colloid_mixture_model.ipynb) (`jupyter-notebook`) It contains functions to create binary PY hardsphere RDFs using analytical results.
+
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
 
