@@ -134,3 +134,14 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 * https://github.com/fengwangPhysics/ctypes-example is an example module to interface python + C via ctypes or python module extensions.
 
 * [Theano](https://github.com/Theano/Theano) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.
+
+* Center of mass of systems with periodic boundary condition. The algorithm used here is from https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions
+ ```
+ def centerOfMass(x, L):
+     """Suppose x is in interval [0,L]"""
+     theta = x/L*2.*np.pi
+     xi = np.cos(theta)
+     zeta = np.sin(theta)
+     thetaBar = np.arctan2(-zeta.mean(), -xi.mean()) + np.pi
+     return L*thetaBar/2./np.pi
+ ```
