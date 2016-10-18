@@ -89,11 +89,14 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Theoretical model for a binary mixture of oppositely charged colloids with counterions and salt](https://github.com/rjadrich/charged_colloid_mixture_model/blob/master/charged_colloid_mixture_model.ipynb) (`jupyter-notebook`) It contains functions to create binary PY hardsphere RDFs using analytical results.
 
-* [guideline for data sharing](https://github.com/jtleek/datasharing)
+* [Guideline for data sharing](https://github.com/jtleek/datasharing)
 
 * [Reading academic papers](https://github.com/jtleek/readingpapers)
 
 * [Reviewing academic papers (as a referee)](https://github.com/jtleek/reviews)
+
+* [Lecture slides for Coursera's Data Analysis class](https://github.com/jtleek/dataanalysis)
+
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
