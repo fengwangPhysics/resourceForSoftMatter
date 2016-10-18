@@ -50,6 +50,13 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
 
 * ImageMagick (www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
 
+* `import` tool from `ImageMagick` can be used to capture the screenshot. Run
+ ```
+ import screenshot.png
+ ```
+ and select the window you want to capture or select a region by pressing the left mouse button and dragging.
+ Ref: http://askubuntu.com/questions/194427/what-is-the-terminal-command-to-take-a-screenshot
+
 * [Inkscape](https://www.inkscape.org/) is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. It can be used to extract and edit figures from scientific papers in PDF format. Its default format is SVG. To convert pdf figures to SVG, one can use `pdftocairo` which has been installed on most Linux computers:
  ```
 $ pdftocairo -svg input.pdf
