@@ -97,6 +97,7 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Lecture slides for Coursera's Data Analysis class](https://github.com/jtleek/dataanalysis)
 
+* [List of free programming books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
