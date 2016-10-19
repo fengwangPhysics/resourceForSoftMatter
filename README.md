@@ -33,6 +33,11 @@ This is an implementation in `c++` of the particle tracking algorithms developed
  * [feature particles with multiscale sizes](https://github.com/MathieuLeocmach/colloids/blob/master/python/colloids/notebooks/Multiscale.ipynb) (`jupyter-notebook`)
  * [Colloid+polymer mixture phase diagram obtained from free volume theory](https://github.com/MathieuLeocmach/colloids/blob/master/python/colloids/notebooks/phase%20diagram.ipynb) (`jupyter-notebook`)
 
+* Some comments and info on 2D feature finding: 
+https://github.com/scikit-beam/scikit-beam/wiki/2-D-Feature-Finding
+
+* Hough transform (1972), which started out as a technique to detect lines in image, has been generalized and extended to detect curves in 2D and 3D. It has been implemented in [scikit-image](https://github.com/scikit-image/scikit-image)
+
 ## movie/image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library. `h.264` encoder is not included in this library. Hence if h.264 is the desired format, it is necessary to install `x264` and compile `ffmpeg` with x264 enabled.
 Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
