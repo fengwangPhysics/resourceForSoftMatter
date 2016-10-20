@@ -104,6 +104,10 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [List of free programming books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
 
+* [Good coding practices for scientific programming (see the wiki)](https://github.com/cogrhythms/good-coding-practices)
+
+* [UC Berkeley Course on Deep Learning](http://joanbruna.github.io/stat212b/)
+
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
 
