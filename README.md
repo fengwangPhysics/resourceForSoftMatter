@@ -3,8 +3,8 @@
 free online resource for soft matter (colloid) research
 
 ## Contents
-* [particle tracking](#particle-tracking)
-* [movie/image](#movieimage)
+* [Particle tracking](#particle-tracking)
+* [Movie/Image](#movieimage)
 * [Big data visualization](#big-data-visualization)
 * [Crystal defect identification](#crystal-defect-identification)
 * [Thesis](#thesis)
@@ -13,15 +13,16 @@ free online resource for soft matter (colloid) research
 * [Useful data structures and algorithms](#useful-data-structures-and-algorithms)
 
 
-## particle tracking
+## Particle tracking
 * [trackpy](https://github.com/ronojoy/trackpy)
-provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter.
+provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (noise filter is now supported in the latest version).
+
 * Particle Identification and Tracking: Particle Identification and Tracking (tacaswell.github.io/tracking/html/)
-This is an implementation in `c++` of the particle tracking algorithms developed by Croker and Grier.
+This is an implementation in `C++` of the particle tracking algorithms developed by Croker and Grier.
 
 * `Matlab` Particle Tracking (site.physics.georgetown.edu/matlab/)
 
-* [circletracking](https://github.com/caspervdw/circletracking): `python` tookits for tracking circles and ellipses in 2D or 3D images
+* [circletracking](https://github.com/caspervdw/circletracking): `python` toolkits for tracking circles and ellipses in 2D or 3D images
 
 * [EllipsoidFit](https://github.com/harukihirasawa/EllipsoidFit) can handle 3D ellipsoid
 
@@ -38,7 +39,7 @@ https://github.com/scikit-beam/scikit-beam/wiki/2-D-Feature-Finding
 
 * Hough transform (1972), which started out as a technique to detect lines in image, has been generalized and extended to detect curves in 2D and 3D. It has been implemented in [scikit-image](https://github.com/scikit-image/scikit-image)
 
-## movie/image
+## Movie/Image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library. `h.264` encoder is not included in this library. Hence if h.264 is the desired format, it is necessary to install `x264` and compile `ffmpeg` with x264 enabled.
 Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
  ```
@@ -66,14 +67,17 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
  ```
 $ pdftocairo -svg input.pdf
  ```
+
 * [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface. It has the same authors as `trackpy`.
 
 * [moviepy](https://github.com/Zulko/moviepy)
 is a `Python` module for video editing.  It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
 
 ## Big data visualization
-* [Bokeh](https://github.com/bokeh/bokeh) is a `python` project which targets browser-based graphics, and recent releases are beginning to do big data in the browser the right way. 
+* [Bokeh](https://github.com/bokeh/bokeh) is a `python` project which targets browser-based graphics, and recent releases are beginning to do big data in the browser the right way.
+
 * [VisPy](https://github.com/vispy/vispy) is another effort to provide easy visualization of large datasets with `python`. It is based on `OpenGL`, with plans to add a `WebGL` backend.
+
 * [mpld3](https://github.com/mpld3/mpld3) brings together `Matplotlib`, the popular `Python`-based graphing library, and `D3js`, the popular Javascript library for creating interactive data,  which can output SVG files. The library may require a little knowledge on javascript to enable flexible functions. It provides an interactive way to data visualization, rather than aiming on big data. d3.js gallery: https://github.com/d3/d3/wiki/Gallery. An example can be found: Visualizing MBTA Data: http://mbtaviz.github.io/
 
 * [OVITO](http://ovito.org/) is a scientific visualization and analysis software for atomistic simulation data developed by Alexander Stukowski at Darmstadt University of Technology, Germany. It can be also used to visualize experimental data if the data is saved as the one of the following formats: LAMMPS, XYZ, IMD, CFG, POSCAR, AMBER/NetCDF, PDB, GSD/HOOMD, and VTK. See the description of those formats: http://ovito.org/manual/usage.import.html
@@ -81,12 +85,16 @@ is a `Python` module for video editing.  It can read and write all the most comm
 * https://github.com/jbmouret/matplotlib_for_papers
 uses `matplotlib` to plot statistical figures. Good example for box plot, Stars (statistical significance).
 
+* [pubplot](https://github.com/fengwangPhysics/pubplot) is a `python` module for making publication-quality figures with `matplotlib`.
+
 ## Crystal defect identification
 * [BiDef](https://github.com/mskarlin/BiDef]) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
-* [Atoman](https://github.com/chrisdjscott/Atoman) provides a python wrapper (written by C extension) on voro++, and algorithms to detect point defects by voronoi.
+
+* [Atoman](https://github.com/chrisdjscott/Atoman) provides a python wrapper (written by `C` extension) on `voro++`, and algorithms to detect point defects by voronoi.
 
 ## Thesis
 * W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
+
 * This thesis (https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
 
 ## Online learning materials
@@ -103,6 +111,12 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * [Lecture slides for Coursera's Data Analysis class](https://github.com/jtleek/dataanalysis)
 
 * [List of free programming books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
+
+* [Good coding practices for scientific programming (see the wiki)](https://github.com/cogrhythms/good-coding-practices)
+
+* [UC Berkeley Course on Deep Learning](http://joanbruna.github.io/stat212b/)
+
+* [Notebooks on regression using python](https://github.com/kshedden/Python-regression-workshop/wiki/Notebooks) (`jupyter-notebook`)
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
@@ -130,13 +144,13 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
  ```
 
 ## Useful data structures and algorithms
-* https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledges on programming.
+* https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledge on programming.
 
 * [Path to a free self-taught education in Computer Science!](https://github.com/open-source-society/computer-science)
 
 * [Path to a free self-taught education in Data Science!](https://github.com/open-source-society/data-science)
 
-* [k-d tree](https://en.wikipedia.org/wiki/K-d_tree) is a space-partitioning data structure for organizing points in a k-dimensional space. It is useful to obtain nearest neighbors with an O(log n) complexity. `scipy.spatial.KDTree` and `scipy.spatial.cKDTree` are two very fast implementations in python and C. (https://github.com/prody/ProDy/tree/master/prody/kdtree) has an implementation of kd-tree which can handle periodic boundary condition. A more general algorithm is `cover tree` which can handle any distance metric in arbitary high dimensional space. There are some C++ cover-tree implementations on github. The speed of the algorithm is very fast: one of implementations claimed that it takes 250 seconds for inserting 10^6 1000-dimensional vectors, and achieves 300 queries per second.
+* [k-d tree](https://en.wikipedia.org/wiki/K-d_tree) is a space-partitioning data structure for organizing points in a k-dimensional space. It is useful to obtain nearest neighbors with an O(log n) complexity. `scipy.spatial.KDTree` and `scipy.spatial.cKDTree` are two very fast implementations in python and C. (https://github.com/prody/ProDy/tree/master/prody/kdtree) has an implementation of kd-tree which can handle periodic boundary condition. A more general algorithm is `cover tree` which can handle any distance metric in arbitrary high dimensional space. There are some C++ cover-tree implementations on github. The speed of the algorithm is very fast: one of implementations claimed that it takes 250 seconds for inserting 10^6 1000-dimensional vectors, and achieves 300 queries per second.
 
 * [libccd](https://github.com/danfis/libccd) is a library for collision detection between two convex shapes.
 
@@ -151,7 +165,7 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 * [Theano](https://github.com/Theano/Theano) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.
 
 * Center of mass of systems with periodic boundary condition. The algorithm used here is from https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions
- ```
+ ```python
  def centerOfMass(x, L):
      """Suppose x is in interval [0,L]"""
      theta = x/L*2.*np.pi
@@ -160,3 +174,5 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
      thetaBar = np.arctan2(-zeta.mean(), -xi.mean()) + np.pi
      return L*thetaBar/2./np.pi
  ```
+
+* [Regular expression cheat sheet useful in data wrangling](http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/misc/regex.ipynb)
