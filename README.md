@@ -74,7 +74,7 @@ $ pdftocairo -svg input.pdf
 * [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface. It has the same authors as `trackpy`.
 
 * [moviepy](https://github.com/Zulko/moviepy)
-is a `Python` module for video editing.  It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
+is a `Python` module for video editing. It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
 
 
 ## Big data visualization
@@ -95,7 +95,7 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 ## Crystal defect identification
 * [OVITO](http://ovito.org/) implemented dislocation detection (DXA).
 
-* [BiDef](https://github.com/mskarlin/BiDef]) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
+* [BiDef](https://github.com/mskarlin/BiDef) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
 
 * [Atoman](https://github.com/chrisdjscott/Atoman) provides a python wrapper (written by `C` extension) on `voro++`, and algorithms to detect point defects by voronoi.
 
