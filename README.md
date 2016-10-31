@@ -39,6 +39,7 @@ https://github.com/scikit-beam/scikit-beam/wiki/2-D-Feature-Finding
 
 * Hough transform (1972), which started out as a technique to detect lines in image, has been generalized and extended to detect curves in 2D and 3D. It has been implemented in [scikit-image](https://github.com/scikit-image/scikit-image)
 
+
 ## Movie/Image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library. `h.264` encoder is not included in this library. Hence if h.264 is the desired format, it is necessary to install `x264` and compile `ffmpeg` with x264 enabled.
 Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
@@ -68,10 +69,13 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
 $ pdftocairo -svg input.pdf
  ```
 
+* https://en.wikipedia.org/wiki/Phi shows the Unicode for different forms of greek letter phi. The most important one is `U+03D5`, which shows the phi letter similar to the latex font, commonly used in math and technical contexts.
+
 * [pims](https://github.com/soft-matter/pims): Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface. It has the same authors as `trackpy`.
 
 * [moviepy](https://github.com/Zulko/moviepy)
-is a `Python` module for video editing.  It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
+is a `Python` module for video editing. It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
+
 
 ## Big data visualization
 * [Bokeh](https://github.com/bokeh/bokeh) is a `python` project which targets browser-based graphics, and recent releases are beginning to do big data in the browser the right way.
@@ -87,15 +91,20 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [pubplot](https://github.com/fengwangPhysics/pubplot) is a `python` module for making publication-quality figures with `matplotlib`.
 
+
 ## Crystal defect identification
-* [BiDef](https://github.com/mskarlin/BiDef]) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
+* [OVITO](http://ovito.org/) implemented dislocation detection (DXA).
+
+* [BiDef](https://github.com/mskarlin/BiDef) is a python package using supervised machine learning for crystal defect identification. See details in the author's paper. It also seems that the package has something to do with `ovito`.
 
 * [Atoman](https://github.com/chrisdjscott/Atoman) provides a python wrapper (written by `C` extension) on `voro++`, and algorithms to detect point defects by voronoi.
+
 
 ## Thesis
 * W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
 
 * This thesis (https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
+
 
 ## Online learning materials
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
@@ -118,20 +127,23 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Notebooks on regression using python](https://github.com/kshedden/Python-regression-workshop/wiki/Notebooks) (`jupyter-notebook`)
 
+* [Example Python notebooks for data science](https://github.com/donnemartin/data-science-ipython-notebooks)
+
+* [Some interesting small student projects written in MATLAB on game theory, dynamical system, and other social systems](https://github.com/msssm/interesting_projects/wiki)
+
+
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
 
 * [Overleaf](https://www.overleaf.com/) is an online `LaTeX` and Rich Text collaborative writing and publishing tool that makes the whole process of writing, editing and publishing scientific documents much quicker and easier. 
 
-* https://github.com/jdleesmiller/latex-course
-An interactive introduction to `LaTeX` using [Overleaf](https://www.overleaf.com/).
+* [An interactive introduction](https://github.com/jdleesmiller/latex-course) to `LaTeX` using [Overleaf](https://www.overleaf.com/).
 
 * [Overleaf templates](https://www.overleaf.com/latex/templates/): Start your projects with quality LaTeX templates for journals, CVs, resumes, papers, presentations, assignments, letters, project reports, and more. 
 
 * [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
 
-* https://github.com/citation-style-language/styles
-Official repository for Citation Style Language (CSL) citation styles.
+* [Official repository for Citation Style Language (CSL) citation styles](https://github.com/citation-style-language/styles)
 
 * merge PDF files:
  * `pdfunite` is a part of poppler, however, someone pointed out that the output.pdf may be very large while `gs` packs a small size.
