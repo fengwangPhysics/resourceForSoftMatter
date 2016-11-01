@@ -187,6 +187,14 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 
 * https://github.com/fengwangPhysics/ctypes-example is an example module to interface python + C via ctypes or python module extensions.
 
+* [boost-python](http://www.boost.org/libs/python/) is a common way to interface `C++` to `Python`.
+
+* [boost-python-examples](https://github.com/TNG/boost-python-examples)
+
+* [Boost.Python interface for NumPy](https://github.com/ndarray/Boost.NumPy)
+
+* [pybind11](https://github.com/pybind/pybind11) is a simple interface to port `C++11` to `Python` and vice versa.
+
 * [Theano](https://github.com/Theano/Theano) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.
 
 * Center of mass of systems with periodic boundary condition. The algorithm used here is from https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions
