@@ -9,6 +9,7 @@ free online resource for soft matter (colloid) research
 * [Crystal defect identification](#crystal-defect-identification)
 * [Thesis](#thesis)
 * [Online learning materials](#online-learning-materials)
+* [Linux](#linux)
 * [Latex and PDF files](#latex-and-pdf-files)
 * [Useful data structures and algorithms](#useful-data-structures-and-algorithms)
 
@@ -101,6 +102,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 
 ## Thesis
+* [Theses from Arjun G. Yodh's group in UPenn](https://www.physics.upenn.edu/yodhlab/theses/)
+
 * W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
 
 * This thesis (https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
@@ -131,6 +134,14 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Some interesting small student projects written in MATLAB on game theory, dynamical system, and other social systems](https://github.com/msssm/interesting_projects/wiki)
 
+
+## Linux
+* To extract `rpm` package
+	```bash
+	rpm2cpio package.rpm | cpio -idmv
+	```
+
+	ref: http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
@@ -167,6 +178,8 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 * [libccd](https://github.com/danfis/libccd) is a library for collision detection between two convex shapes.
 
 * [NVT-GJK](https://github.com/Grieverheart/NVT-GJK) NVT-MC Hard Particle Simulation
+
+* [multistate Bennett acceptance ratio (MBAR)](https://github.com/choderalab/pymbar) estimating expectations and free energy differences. Ref: Shirts MR and Chodera JD. Statistically optimal analysis of samples from multiple equilibrium states. J. Chem. Phys. 129:124105 (2008).
 
 * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 
