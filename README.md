@@ -43,9 +43,9 @@ https://github.com/scikit-beam/scikit-beam/wiki/2-D-Feature-Finding
 
 ## Movie/Image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library. `h.264` encoder is not included in this library. Hence if h.264 is the desired format, it is necessary to install `x264` and compile `ffmpeg` with x264 enabled.
-Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
+Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s) in `bash` in `Linux`
  ```
- $ ffmpeg -i figs/%04d.png -vcodec mpeg4 -r 10 -b:v 1M output.avi
+ ffmpeg -i figs/%04d.png -vcodec mpeg4 -r 10 -b:v 1M output.avi
  ```
 
 * html files can embed videos, so that one can use browser to show movie. Media formats supported by HTML (Browser compatibility) should be
@@ -67,7 +67,7 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
 
 * [Inkscape](https://www.inkscape.org/) is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. It can be used to extract and edit figures from scientific papers in PDF format. Its default format is SVG. To convert pdf figures to SVG, one can use `pdftocairo` which has been installed on most Linux computers:
  ```
-$ pdftocairo -svg input.pdf
+ pdftocairo -svg input.pdf
  ```
 
 * https://en.wikipedia.org/wiki/Phi shows the Unicode for different forms of greek letter phi. The most important one is `U+03D5`, which shows the phi letter similar to the latex font, commonly used in math and technical contexts.
@@ -76,6 +76,8 @@ $ pdftocairo -svg input.pdf
 
 * [moviepy](https://github.com/Zulko/moviepy)
 is a `Python` module for video editing. It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
+
+* [neural-enhance](https://github.com/alexjc/neural-enhance) Super Resolution for images using deep learning.
 
 
 ## Big data visualization
@@ -134,6 +136,7 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Some interesting small student projects written in MATLAB on game theory, dynamical system, and other social systems](https://github.com/msssm/interesting_projects/wiki)
 
+* [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 
 ## Linux
 * To extract `rpm` package
@@ -159,11 +162,11 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * merge PDF files:
  * `pdfunite` is a part of poppler, however, someone pointed out that the output.pdf may be very large while `gs` packs a small size.
  ```
-$ pdfunite in1.pdf in2.pdf out.pdf
+ pdfunite in1.pdf in2.pdf out.pdf
  ```
  * use `gs`
  ```
-$ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
+ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
  ```
 
 ## Useful data structures and algorithms
@@ -198,6 +201,7 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 * [Theano](https://github.com/Theano/Theano) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.
 
 * Center of mass of systems with periodic boundary condition. The algorithm used here is from https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions
+Here is an example implementation in `Python`
  ```python
  def centerOfMass(x, L):
      """Suppose x is in interval [0,L]"""
@@ -209,3 +213,7 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
  ```
 
 * [Regular expression cheat sheet useful in data wrangling](http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/misc/regex.ipynb)
+
+* [tsfresh](https://github.com/blue-yonder/tsfresh) Automatic extraction of relevant features from time series
+
+* [EasyOpenCL](https://github.com/Gladdy/EasyOpenCL) Examples for using `OpenCL` with `C++`. It uses `OpenCL` for GPU-computing.
