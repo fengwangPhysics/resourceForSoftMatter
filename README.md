@@ -15,13 +15,13 @@ free online resource for soft matter (colloid) research
 
 
 ## Particle tracking
-* [trackpy](https://github.com/ronojoy/trackpy)
-provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (noise filter is now supported in the latest version).
+* [trackpy](https://github.com/soft-matter/trackpy)
+provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (_noise filter is now supported in the latest version_).
 
-* Particle Identification and Tracking: Particle Identification and Tracking (tacaswell.github.io/tracking/html/)
+* Particle Identification and Tracking: Particle Identification and Tracking (http://tacaswell.github.io/tracking/html/)
 This is an implementation in `C++` of the particle tracking algorithms developed by Croker and Grier.
 
-* `Matlab` Particle Tracking (site.physics.georgetown.edu/matlab/)
+* [`Matlab` Particle Tracking](http://site.physics.georgetown.edu/matlab/)
 
 * [circletracking](https://github.com/caspervdw/circletracking): `python` toolkits for tracking circles and ellipses in 2D or 3D images
 
@@ -56,7 +56,7 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s) in `bash` in `Linux`
 
 * In PowerPoint 2013 and later, for the best video playback experience, it is recommended to use .mp4 files encoded with H.264 video (a.k.a. MPEG-4 AVC) and AAC audio. For audio, use .m4a files encoded with AAC audio. 
 
-* ImageMagick (www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
+* [ImageMagick](http://www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
 
 * `import` tool from `ImageMagick` can be used to capture the screenshot. Run
  ```
@@ -106,9 +106,9 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 ## Thesis
 * [Theses from Arjun G. Yodh's group in UPenn](https://www.physics.upenn.edu/yodhlab/theses/)
 
-* W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
+* [W.L. Miller's thesis](https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
 
-* This thesis (https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
+* [This thesis](https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
 
 
 ## Online learning materials
@@ -169,6 +169,9 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
  gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
  ```
 
+* `Markdown` is a lightweight and easy-to-use syntax for styling all forms of writing, which can be converted to various formats, such as Latex, html, pdf, etc.
+	* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 3 minutes read
+
 ## Useful data structures and algorithms
 * https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledge on programming.
 
@@ -217,3 +220,9 @@ Here is an example implementation in `Python`
 * [tsfresh](https://github.com/blue-yonder/tsfresh) Automatic extraction of relevant features from time series
 
 * [EasyOpenCL](https://github.com/Gladdy/EasyOpenCL) Examples for using `OpenCL` with `C++`. It uses `OpenCL` for GPU-computing.
+
+* [TensorFlow](https://github.com/tensorflow/tensorflow)
+Computation using data flow graphs for scalable machine learning
+
+* [Fast Style Transfer in TensorFlow](https://github.com/lengstrom/fast-style-transfer)
+Add styles from famous paintings to any photo in a fraction of a second! Training takes a much longer time (4-6 hours on a Maxwell Titan X). :star:
