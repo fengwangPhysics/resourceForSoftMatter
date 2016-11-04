@@ -9,18 +9,19 @@ free online resource for soft matter (colloid) research
 * [Crystal defect identification](#crystal-defect-identification)
 * [Thesis](#thesis)
 * [Online learning materials](#online-learning-materials)
+* [Linux](#linux)
 * [Latex and PDF files](#latex-and-pdf-files)
 * [Useful data structures and algorithms](#useful-data-structures-and-algorithms)
 
 
 ## Particle tracking
-* [trackpy](https://github.com/ronojoy/trackpy)
-provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (noise filter is now supported in the latest version).
+* [trackpy](https://github.com/soft-matter/trackpy)
+provides a mature version of `python` particle tracking implementation of the famous `IDL` tracking code from John Crocker and David Grier (www.physics.emory.edu/~weeks/idl/). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (_noise filter is now supported in the latest version_).
 
-* Particle Identification and Tracking: Particle Identification and Tracking (tacaswell.github.io/tracking/html/)
+* Particle Identification and Tracking: Particle Identification and Tracking (http://tacaswell.github.io/tracking/html/)
 This is an implementation in `C++` of the particle tracking algorithms developed by Croker and Grier.
 
-* `Matlab` Particle Tracking (site.physics.georgetown.edu/matlab/)
+* [`Matlab` Particle Tracking](http://site.physics.georgetown.edu/matlab/)
 
 * [circletracking](https://github.com/caspervdw/circletracking): `python` toolkits for tracking circles and ellipses in 2D or 3D images
 
@@ -42,9 +43,9 @@ https://github.com/scikit-beam/scikit-beam/wiki/2-D-Feature-Finding
 
 ## Movie/Image
 * [ffmpeg](https://ffmpeg.org/) for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library. `h.264` encoder is not included in this library. Hence if h.264 is the desired format, it is necessary to install `x264` and compile `ffmpeg` with x264 enabled.
-Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
+Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s) in `bash` in `Linux`
  ```
- $ ffmpeg -i figs/%04d.png -vcodec mpeg4 -r 10 -b:v 1M output.avi
+ ffmpeg -i figs/%04d.png -vcodec mpeg4 -r 10 -b:v 1M output.avi
  ```
 
 * html files can embed videos, so that one can use browser to show movie. Media formats supported by HTML (Browser compatibility) should be
@@ -55,7 +56,7 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
 
 * In PowerPoint 2013 and later, for the best video playback experience, it is recommended to use .mp4 files encoded with H.264 video (a.k.a. MPEG-4 AVC) and AAC audio. For audio, use .m4a files encoded with AAC audio. 
 
-* ImageMagick (www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
+* [ImageMagick](http://www.imagemagick.org/): Convert, Edit, Or Compose Bitmap Images
 
 * `import` tool from `ImageMagick` can be used to capture the screenshot. Run
  ```
@@ -66,7 +67,7 @@ Here is an example to use `ffmpeg` (10 fps, bitrate: 1MB/s)
 
 * [Inkscape](https://www.inkscape.org/) is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. It can be used to extract and edit figures from scientific papers in PDF format. Its default format is SVG. To convert pdf figures to SVG, one can use `pdftocairo` which has been installed on most Linux computers:
  ```
-$ pdftocairo -svg input.pdf
+ pdftocairo -svg input.pdf
  ```
 
 * https://en.wikipedia.org/wiki/Phi shows the Unicode for different forms of greek letter phi. The most important one is `U+03D5`, which shows the phi letter similar to the latex font, commonly used in math and technical contexts.
@@ -75,6 +76,8 @@ $ pdftocairo -svg input.pdf
 
 * [moviepy](https://github.com/Zulko/moviepy)
 is a `Python` module for video editing. It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux
+
+* [neural-enhance](https://github.com/alexjc/neural-enhance) Super Resolution for images using deep learning.
 
 
 ## Big data visualization
@@ -101,9 +104,11 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 
 ## Thesis
-* W.L. Miller's thesis (https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
+* [Theses from Arjun G. Yodh's group in UPenn](https://www.physics.upenn.edu/yodhlab/theses/)
 
-* This thesis (https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
+* [W.L. Miller's thesis](https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
+
+* [This thesis](https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
 
 
 ## Online learning materials
@@ -131,6 +136,15 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Some interesting small student projects written in MATLAB on game theory, dynamical system, and other social systems](https://github.com/msssm/interesting_projects/wiki)
 
+* [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
+
+## Linux
+* To extract `rpm` package
+	```bash
+	rpm2cpio package.rpm | cpio -idmv
+	```
+
+	ref: http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
@@ -148,12 +162,15 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * merge PDF files:
  * `pdfunite` is a part of poppler, however, someone pointed out that the output.pdf may be very large while `gs` packs a small size.
  ```
-$ pdfunite in1.pdf in2.pdf out.pdf
+ pdfunite in1.pdf in2.pdf out.pdf
  ```
  * use `gs`
  ```
-$ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
+ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
  ```
+
+* `Markdown` is a lightweight and easy-to-use syntax for styling all forms of writing, which can be converted to various formats, such as Latex, html, pdf, etc.
+	* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 3 minutes read
 
 ## Useful data structures and algorithms
 * https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledge on programming.
@@ -168,15 +185,26 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 
 * [NVT-GJK](https://github.com/Grieverheart/NVT-GJK) NVT-MC Hard Particle Simulation
 
+* [multistate Bennett acceptance ratio (MBAR)](https://github.com/choderalab/pymbar) estimating expectations and free energy differences. Ref: Shirts MR and Chodera JD. Statistically optimal analysis of samples from multiple equilibrium states. J. Chem. Phys. 129:124105 (2008).
+
 * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 
 * https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions.
 
 * https://github.com/fengwangPhysics/ctypes-example is an example module to interface python + C via ctypes or python module extensions.
 
+* [boost-python](http://www.boost.org/libs/python/) is a common way to interface `C++` to `Python`.
+
+* [boost-python-examples](https://github.com/TNG/boost-python-examples)
+
+* [Boost.Python interface for NumPy](https://github.com/ndarray/Boost.NumPy)
+
+* [pybind11](https://github.com/pybind/pybind11) is a simple interface to port `C++11` to `Python` and vice versa.
+
 * [Theano](https://github.com/Theano/Theano) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.
 
 * Center of mass of systems with periodic boundary condition. The algorithm used here is from https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions
+Here is an example implementation in `Python`
  ```python
  def centerOfMass(x, L):
      """Suppose x is in interval [0,L]"""
@@ -188,3 +216,13 @@ $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
  ```
 
 * [Regular expression cheat sheet useful in data wrangling](http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/misc/regex.ipynb)
+
+* [tsfresh](https://github.com/blue-yonder/tsfresh) Automatic extraction of relevant features from time series
+
+* [EasyOpenCL](https://github.com/Gladdy/EasyOpenCL) Examples for using `OpenCL` with `C++`. It uses `OpenCL` for GPU-computing.
+
+* [TensorFlow](https://github.com/tensorflow/tensorflow)
+Computation using data flow graphs for scalable machine learning
+
+* [Fast Style Transfer in TensorFlow](https://github.com/lengstrom/fast-style-transfer)
+Add styles from famous paintings to any photo in a fraction of a second! Training takes a much longer time (4-6 hours on a Maxwell Titan X). :star:
