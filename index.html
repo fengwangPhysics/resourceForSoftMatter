@@ -34,6 +34,7 @@
 <li><a href="#crystal-defect-identification">Crystal defect identification</a></li>
 <li><a href="#thesis">Thesis</a></li>
 <li><a href="#online-learning-materials">Online learning materials</a></li>
+<li><a href="#linux">Linux</a></li>
 <li><a href="#latex-and-pdf-files">Latex and PDF files</a></li>
 <li><a href="#useful-data-structures-and-algorithms">Useful data structures and algorithms</a></li>
 </ul>
@@ -42,11 +43,11 @@
 <a id="particle-tracking" class="anchor" href="#particle-tracking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Particle tracking</h2>
 
 <ul>
-<li><p><a href="https://github.com/ronojoy/trackpy">trackpy</a>
-provides a mature version of <code>python</code> particle tracking implementation of the famous <code>IDL</code> tracking code from John Crocker and David Grier (<a href="http://www.physics.emory.edu/%7Eweeks/idl/">www.physics.emory.edu/~weeks/idl/</a>). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (noise filter is now supported in the latest version).</p></li>
-<li><p>Particle Identification and Tracking: Particle Identification and Tracking (tacaswell.github.io/tracking/html/)
+<li><p><a href="https://github.com/soft-matter/trackpy">trackpy</a>
+provides a mature version of <code>python</code> particle tracking implementation of the famous <code>IDL</code> tracking code from John Crocker and David Grier (<a href="http://www.physics.emory.edu/%7Eweeks/idl/">www.physics.emory.edu/~weeks/idl/</a>). Furthermore, it implements a few more advanced trackers to handle complicated situations. However, it seems that it lacks an image noise filter (<em>noise filter is now supported in the latest version</em>).</p></li>
+<li><p>Particle Identification and Tracking: Particle Identification and Tracking (<a href="http://tacaswell.github.io/tracking/html/">http://tacaswell.github.io/tracking/html/</a>)
 This is an implementation in <code>C++</code> of the particle tracking algorithms developed by Croker and Grier.</p></li>
-<li><p><code>Matlab</code> Particle Tracking (site.physics.georgetown.edu/matlab/)</p></li>
+<li><p><a href="http://site.physics.georgetown.edu/matlab/"><code>Matlab</code> Particle Tracking</a></p></li>
 <li><p><a href="https://github.com/caspervdw/circletracking">circletracking</a>: <code>python</code> toolkits for tracking circles and ellipses in 2D or 3D images</p></li>
 <li><p><a href="https://github.com/harukihirasawa/EllipsoidFit">EllipsoidFit</a> can handle 3D ellipsoid</p></li>
 <li><p><a href="https://github.com/harukihirasawa/Rectangle_fit">Rectangle_fit</a> can handle rod</p></li>
@@ -72,9 +73,9 @@ This is an implementation in <code>C++</code> of the particle tracking algorithm
 <ul>
 <li>
 <p><a href="https://ffmpeg.org/">ffmpeg</a> for making movies, and converting movie to images. It is a cross-platform solution to record, convert and stream audio and video. It includes libavcodec - the leading audio/video codec library. <code>h.264</code> encoder is not included in this library. Hence if h.264 is the desired format, it is necessary to install <code>x264</code> and compile <code>ffmpeg</code> with x264 enabled.
-Here is an example to use <code>ffmpeg</code> (10 fps, bitrate: 1MB/s)</p>
+Here is an example to use <code>ffmpeg</code> (10 fps, bitrate: 1MB/s) in <code>bash</code> in <code>Linux</code></p>
 
-<pre><code>$ ffmpeg -i figs/%04d.png -vcodec mpeg4 -r 10 -b:v 1M output.avi
+<pre><code>ffmpeg -i figs/%04d.png -vcodec mpeg4 -r 10 -b:v 1M output.avi
 </code></pre>
 </li>
 <li>
@@ -88,7 +89,7 @@ Here is an example to use <code>ffmpeg</code> (10 fps, bitrate: 1MB/s)</p>
 </ul>
 </li>
 <li><p>In PowerPoint 2013 and later, for the best video playback experience, it is recommended to use .mp4 files encoded with H.264 video (a.k.a. MPEG-4 AVC) and AAC audio. For audio, use .m4a files encoded with AAC audio. </p></li>
-<li><p>ImageMagick (<a href="http://www.imagemagick.org/">www.imagemagick.org/</a>): Convert, Edit, Or Compose Bitmap Images</p></li>
+<li><p><a href="http://www.imagemagick.org/">ImageMagick</a>: Convert, Edit, Or Compose Bitmap Images</p></li>
 <li>
 <p><code>import</code> tool from <code>ImageMagick</code> can be used to capture the screenshot. Run</p>
 
@@ -101,13 +102,14 @@ Ref: <a href="http://askubuntu.com/questions/194427/what-is-the-terminal-command
 <li>
 <p><a href="https://www.inkscape.org/">Inkscape</a> is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers. It can be used to extract and edit figures from scientific papers in PDF format. Its default format is SVG. To convert pdf figures to SVG, one can use <code>pdftocairo</code> which has been installed on most Linux computers:</p>
 
-<pre><code>$ pdftocairo -svg input.pdf
+<pre><code>pdftocairo -svg input.pdf
 </code></pre>
 </li>
 <li><p><a href="https://en.wikipedia.org/wiki/Phi">https://en.wikipedia.org/wiki/Phi</a> shows the Unicode for different forms of greek letter phi. The most important one is <code>U+03D5</code>, which shows the phi letter similar to the latex font, commonly used in math and technical contexts.</p></li>
 <li><p><a href="https://github.com/soft-matter/pims">pims</a>: Python Image Sequence: Load video and sequential images in many formats with a simple, consistent interface. It has the same authors as <code>trackpy</code>.</p></li>
 <li><p><a href="https://github.com/Zulko/moviepy">moviepy</a>
 is a <code>Python</code> module for video editing. It can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux</p></li>
+<li><p><a href="https://github.com/alexjc/neural-enhance">neural-enhance</a> Super Resolution for images using deep learning.</p></li>
 </ul>
 
 <h2>
@@ -136,8 +138,9 @@ uses <code>matplotlib</code> to plot statistical figures. Good example for box p
 <a id="thesis" class="anchor" href="#thesis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thesis</h2>
 
 <ul>
-<li><p>W.L. Miller's thesis (<a href="https://github.com/wlmiller/thesis">https://github.com/wlmiller/thesis</a>): Janus particles and aspherical particles MD simulation</p></li>
-<li><p>This thesis (<a href="https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex">https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex</a>) gives a note on FMT of hard spheres.</p></li>
+<li><p><a href="https://www.physics.upenn.edu/yodhlab/theses/">Theses from Arjun G. Yodh's group in UPenn</a></p></li>
+<li><p><a href="https://github.com/wlmiller/thesis">W.L. Miller's thesis</a>: Janus particles and aspherical particles MD simulation</p></li>
+<li><p><a href="https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex">This thesis</a> gives a note on FMT of hard spheres.</p></li>
 </ul>
 
 <h2>
@@ -156,6 +159,20 @@ uses <code>matplotlib</code> to plot statistical figures. Good example for box p
 <li><p><a href="https://github.com/kshedden/Python-regression-workshop/wiki/Notebooks">Notebooks on regression using python</a> (<code>jupyter-notebook</code>)</p></li>
 <li><p><a href="https://github.com/donnemartin/data-science-ipython-notebooks">Example Python notebooks for data science</a></p></li>
 <li><p><a href="https://github.com/msssm/interesting_projects/wiki">Some interesting small student projects written in MATLAB on game theory, dynamical system, and other social systems</a></p></li>
+<li><p><a href="https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap">Deep Learning Papers Reading Roadmap</a></p></li>
+</ul>
+
+<h2>
+<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h2>
+
+<ul>
+<li>
+<p>To extract <code>rpm</code> package</p>
+
+<div class="highlight highlight-source-shell"><pre>rpm2cpio package.rpm <span class="pl-k">|</span> cpio -idmv</pre></div>
+
+<p>ref: <a href="http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm">http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm</a></p>
+</li>
 </ul>
 
 <h2>
@@ -176,7 +193,7 @@ uses <code>matplotlib</code> to plot statistical figures. Good example for box p
 <code>pdfunite</code> is a part of poppler, however, someone pointed out that the output.pdf may be very large while <code>gs</code> packs a small size.</li>
 </ul>
 
-<pre><code>$ pdfunite in1.pdf in2.pdf out.pdf
+<pre><code>pdfunite in1.pdf in2.pdf out.pdf
 </code></pre>
 
 <ul>
@@ -184,8 +201,16 @@ uses <code>matplotlib</code> to plot statistical figures. Good example for box p
 </li>
 </ul>
 
-<pre><code>$ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
+<pre><code>gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
 </code></pre>
+</li>
+<li>
+<p><code>Markdown</code> is a lightweight and easy-to-use syntax for styling all forms of writing, which can be converted to various formats, such as Latex, html, pdf, etc.</p>
+
+<ul>
+<li>
+<a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a> 3 minutes read</li>
+</ul>
 </li>
 </ul>
 
@@ -199,12 +224,18 @@ uses <code>matplotlib</code> to plot statistical figures. Good example for box p
 <li><p><a href="https://en.wikipedia.org/wiki/K-d_tree">k-d tree</a> is a space-partitioning data structure for organizing points in a k-dimensional space. It is useful to obtain nearest neighbors with an O(log n) complexity. <code>scipy.spatial.KDTree</code> and <code>scipy.spatial.cKDTree</code> are two very fast implementations in python and C. (<a href="https://github.com/prody/ProDy/tree/master/prody/kdtree">https://github.com/prody/ProDy/tree/master/prody/kdtree</a>) has an implementation of kd-tree which can handle periodic boundary condition. A more general algorithm is <code>cover tree</code> which can handle any distance metric in arbitrary high dimensional space. There are some C++ cover-tree implementations on github. The speed of the algorithm is very fast: one of implementations claimed that it takes 250 seconds for inserting 10^6 1000-dimensional vectors, and achieves 300 queries per second.</p></li>
 <li><p><a href="https://github.com/danfis/libccd">libccd</a> is a library for collision detection between two convex shapes.</p></li>
 <li><p><a href="https://github.com/Grieverheart/NVT-GJK">NVT-GJK</a> NVT-MC Hard Particle Simulation</p></li>
+<li><p><a href="https://github.com/choderalab/pymbar">multistate Bennett acceptance ratio (MBAR)</a> estimating expectations and free energy differences. Ref: Shirts MR and Chodera JD. Statistically optimal analysis of samples from multiple equilibrium states. J. Chem. Phys. 129:124105 (2008).</p></li>
 <li><p><a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks">A gallery of interesting IPython Notebooks</a></p></li>
 <li><p><a href="https://gist.github.com/nzjrs/990493">https://gist.github.com/nzjrs/990493</a> shows ways to interface python + C via ctypes or python module extensions.</p></li>
 <li><p><a href="https://github.com/fengwangPhysics/ctypes-example">https://github.com/fengwangPhysics/ctypes-example</a> is an example module to interface python + C via ctypes or python module extensions.</p></li>
+<li><p><a href="http://www.boost.org/libs/python/">boost-python</a> is a common way to interface <code>C++</code> to <code>Python</code>.</p></li>
+<li><p><a href="https://github.com/TNG/boost-python-examples">boost-python-examples</a></p></li>
+<li><p><a href="https://github.com/ndarray/Boost.NumPy">Boost.Python interface for NumPy</a></p></li>
+<li><p><a href="https://github.com/pybind/pybind11">pybind11</a> is a simple interface to port <code>C++11</code> to <code>Python</code> and vice versa.</p></li>
 <li><p><a href="https://github.com/Theano/Theano">Theano</a> is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation. It has already been used in many python packages.</p></li>
 <li>
-<p>Center of mass of systems with periodic boundary condition. The algorithm used here is from <a href="https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions">https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions</a></p>
+<p>Center of mass of systems with periodic boundary condition. The algorithm used here is from <a href="https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions">https://en.wikipedia.org/wiki/Center_of_mass#Systems_with_periodic_boundary_conditions</a>
+Here is an example implementation in <code>Python</code></p>
 
 <div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">centerOfMass</span>(<span class="pl-smi">x</span>, <span class="pl-smi">L</span>):
    <span class="pl-s"><span class="pl-pds">"""</span>Suppose x is in interval [0,L]<span class="pl-pds">"""</span></span>
@@ -215,6 +246,12 @@ uses <code>matplotlib</code> to plot statistical figures. Good example for box p
    <span class="pl-k">return</span> <span class="pl-c1">L</span><span class="pl-k">*</span>thetaBar<span class="pl-k">/</span><span class="pl-c1">2</span>.<span class="pl-k">/</span>np.pi</pre></div>
 </li>
 <li><p><a href="http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/misc/regex.ipynb">Regular expression cheat sheet useful in data wrangling</a></p></li>
+<li><p><a href="https://github.com/blue-yonder/tsfresh">tsfresh</a> Automatic extraction of relevant features from time series</p></li>
+<li><p><a href="https://github.com/Gladdy/EasyOpenCL">EasyOpenCL</a> Examples for using <code>OpenCL</code> with <code>C++</code>. It uses <code>OpenCL</code> for GPU-computing.</p></li>
+<li><p><a href="https://github.com/tensorflow/tensorflow">TensorFlow</a>
+Computation using data flow graphs for scalable machine learning</p></li>
+<li><p><a href="https://github.com/lengstrom/fast-style-transfer">Fast Style Transfer in TensorFlow</a>
+Add styles from famous paintings to any photo in a fraction of a second! Training takes a much longer time (4-6 hours on a Maxwell Titan X). <g-emoji alias="star" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b50.png" ios-version="6.0">⭐️</g-emoji></p></li>
 </ul>
 
       <footer class="site-footer">
