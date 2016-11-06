@@ -138,6 +138,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 
+* [dataquest blog](https://www.dataquest.io/blog/)
+
 ## Linux
 * To extract `rpm` package
 	```bash
@@ -226,3 +228,10 @@ Computation using data flow graphs for scalable machine learning
 
 * [Fast Style Transfer in TensorFlow](https://github.com/lengstrom/fast-style-transfer)
 Add styles from famous paintings to any photo in a fraction of a second! Training takes a much longer time (4-6 hours on a Maxwell Titan X). :star:
+
+* [kmpfit](https://www.astro.rug.nl/software/kapteyn/kmpfittutorial.html)
+provides a complete tutorial on curve fitting, uncertainty estimation of parameters, confidence and prediction intervals for fittings. `kmpfit` is part of the `kapteyn` package, a `Python` module for astronomical applications.
+
+* [Matrix exponential by Pade approximation](https://github.com/rngantner/Pade_PyCpp)
+
+* [Invert Pade approximation back to Taylor series with python](http://math.stackexchange.com/questions/1527557/inverting-the-pade-approximation-going-from-p-mx-q-nx-to-f-mnx)
