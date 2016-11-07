@@ -106,6 +106,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 ## Thesis
 * [Theses from Arjun G. Yodh's group in UPenn](https://www.physics.upenn.edu/yodhlab/theses/)
 
+* [Tutorial and thesis from group of David A. Weitz](http://weitzlab.seas.harvard.edu/resources/techniques-and-tutorials)
+
 * [W.L. Miller's thesis](https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
 
 * [This thesis](https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
@@ -139,6 +141,12 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 
 * [dataquest blog](https://www.dataquest.io/blog/)
+
+* [Statistics on github repos](https://github.com/donnemartin/viz) Rank-star distribution follows a power-law.
+
+* [A next-generation curated knowledge sharing platform for data scientists and other technical professions](https://github.com/airbnb/knowledge-repo). Developed by Airbnb. Now in beta version.
+
+* [A machine learning approach to classify songs by mood](https://github.com/rasbt/musicmood) Music are getting sad for several decades :star:
 
 ## Linux
 * To extract `rpm` package
