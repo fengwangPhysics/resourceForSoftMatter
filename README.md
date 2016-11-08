@@ -243,3 +243,5 @@ provides a complete tutorial on curve fitting, uncertainty estimation of paramet
 * [Matrix exponential by Pade approximation](https://github.com/rngantner/Pade_PyCpp)
 
 * [Invert Pade approximation back to Taylor series with python](http://math.stackexchange.com/questions/1527557/inverting-the-pade-approximation-going-from-p-mx-q-nx-to-f-mnx)
+
+* [Codes for growing soft solids and crumpling, wrinkling and tearing of thins sheets, developed by Tuomas Tallinen](http://users.jyu.fi/~tutatall/codes.html)
