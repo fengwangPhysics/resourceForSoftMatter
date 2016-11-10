@@ -114,6 +114,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 
 ## Online learning materials
+* [The Feynman Lectures on Physics](http://www.feynmanlectures.caltech.edu/) (high resolution, read online)
+
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
 
 * [Theoretical model for a binary mixture of oppositely charged colloids with counterions and salt](https://github.com/rjadrich/charged_colloid_mixture_model/blob/master/charged_colloid_mixture_model.ipynb) (`jupyter-notebook`) It contains functions to create binary PY hardsphere RDFs using analytical results.
@@ -155,6 +157,18 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 	```
 
 	ref: http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm
+
+* Use the `repoquery` tool from the `yum-utils` package to check `rpm` package dependence
+	```
+	repoquery --requires <package>
+	```
+
+	To see local `rpm` package dependence (e.g. already downloaded)
+	```
+	rpm -qp --requires <package file>
+	```
+	
+	ref: http://superuser.com/questions/294662/how-to-get-list-of-dependencies-of-non-installed-rpm-package
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
@@ -199,6 +213,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 
+* [Network analysis on Python package Dependency](http://kgullikson88.github.io/blog/pypi-analysis.html) (data available for 20k packages)
+
 * https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions.
 
 * https://github.com/fengwangPhysics/ctypes-example is an example module to interface python + C via ctypes or python module extensions.
@@ -236,6 +252,9 @@ Computation using data flow graphs for scalable machine learning
 
 * [Fast Style Transfer in TensorFlow](https://github.com/lengstrom/fast-style-transfer)
 Add styles from famous paintings to any photo in a fraction of a second! Training takes a much longer time (4-6 hours on a Maxwell Titan X). :star:
+
+* [Image style transfer: history and future](https://research.googleblog.com/2016/10/supercharging-style-transfer.html)
+ Learning and Combining Multiple Styles
 
 * [kmpfit](https://www.astro.rug.nl/software/kapteyn/kmpfittutorial.html)
 provides a complete tutorial on curve fitting, uncertainty estimation of parameters, confidence and prediction intervals for fittings. `kmpfit` is part of the `kapteyn` package, a `Python` module for astronomical applications.
