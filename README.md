@@ -118,6 +118,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
 
+* [Lecture notes on statistical mechanics](http://statisticalphysics.readthedocs.io/)
+
 * [Theoretical model for a binary mixture of oppositely charged colloids with counterions and salt](https://github.com/rjadrich/charged_colloid_mixture_model/blob/master/charged_colloid_mixture_model.ipynb) (`jupyter-notebook`) It contains functions to create binary PY hardsphere RDFs using analytical results.
 
 * [Guideline for data sharing](https://github.com/jtleek/datasharing)
@@ -150,6 +152,10 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [A machine learning approach to classify songs by mood](https://github.com/rasbt/musicmood) Music are getting sad for several decades :star:
 
+* [simple overview of python, numpy, scipy, matplotlib functions that are useful for scientific work](https://github.com/IPGP/scientific_python_cheat_sheet)
+
+* [A list of tools for general research](https://github.com/emptymalei/awesome-research)
+
 ## Linux
 * To extract `rpm` package
 	```bash
@@ -181,6 +187,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
 
+* [How to use ZOTERO](https://github.com/biodicee/team/wiki/use_zotero)
+
 * [Official repository for Citation Style Language (CSL) citation styles](https://github.com/citation-style-language/styles)
 
 * merge PDF files:
@@ -195,6 +203,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * `Markdown` is a lightweight and easy-to-use syntax for styling all forms of writing, which can be converted to various formats, such as Latex, html, pdf, etc.
 	* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 3 minutes read
+
+* [Pandoc filters list](https://github.com/jgm/pandoc/wiki/Pandoc-Filters)
 
 ## Useful data structures and algorithms
 * https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledge on programming.
@@ -244,6 +254,8 @@ Here is an example implementation in `Python`
 * [Regular expression cheat sheet useful in data wrangling](http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/misc/regex.ipynb)
 
 * [tsfresh](https://github.com/blue-yonder/tsfresh) Automatic extraction of relevant features from time series
+
+* Time Series analysis [tsa](http://statsmodels.sourceforge.net/devel/tsa.html)
 
 * [EasyOpenCL](https://github.com/Gladdy/EasyOpenCL) Examples for using `OpenCL` with `C++`. It uses `OpenCL` for GPU-computing.
 
