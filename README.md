@@ -106,13 +106,19 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 ## Thesis
 * [Theses from Arjun G. Yodh's group in UPenn](https://www.physics.upenn.edu/yodhlab/theses/)
 
+* [Tutorial and thesis from group of David A. Weitz](http://weitzlab.seas.harvard.edu/resources/techniques-and-tutorials)
+
 * [W.L. Miller's thesis](https://github.com/wlmiller/thesis): Janus particles and aspherical particles MD simulation
 
 * [This thesis](https://github.com/jeffschulte/dissertation/blob/master/general_notes.tex) gives a note on FMT of hard spheres.
 
 
 ## Online learning materials
+* [The Feynman Lectures on Physics](http://www.feynmanlectures.caltech.edu/) (high resolution, read online)
+
 * [SklogWiki](http://www.sklogwiki.org/SklogWiki/index.php/Main_Page) is an open-edit encyclopedia dedicated to thermodynamics and statistical mechanics, especially that of simple liquids, complex fluids, and soft condensed matter.
+
+* [Lecture notes on statistical mechanics](http://statisticalphysics.readthedocs.io/)
 
 * [Theoretical model for a binary mixture of oppositely charged colloids with counterions and salt](https://github.com/rjadrich/charged_colloid_mixture_model/blob/master/charged_colloid_mixture_model.ipynb) (`jupyter-notebook`) It contains functions to create binary PY hardsphere RDFs using analytical results.
 
@@ -138,6 +144,18 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 
+* [dataquest blog](https://www.dataquest.io/blog/)
+
+* [Statistics on github repos](https://github.com/donnemartin/viz) Rank-star distribution follows a power-law.
+
+* [A next-generation curated knowledge sharing platform for data scientists and other technical professions](https://github.com/airbnb/knowledge-repo). Developed by Airbnb. Now in beta version.
+
+* [A machine learning approach to classify songs by mood](https://github.com/rasbt/musicmood) Music are getting sad for several decades :star:
+
+* [simple overview of python, numpy, scipy, matplotlib functions that are useful for scientific work](https://github.com/IPGP/scientific_python_cheat_sheet)
+
+* [A list of tools for general research](https://github.com/emptymalei/awesome-research)
+
 ## Linux
 * To extract `rpm` package
 	```bash
@@ -145,6 +163,18 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 	```
 
 	ref: http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm
+
+* Use the `repoquery` tool from the `yum-utils` package to check `rpm` package dependence
+	```
+	repoquery --requires <package>
+	```
+
+	To see local `rpm` package dependence (e.g. already downloaded)
+	```
+	rpm -qp --requires <package file>
+	```
+	
+	ref: http://superuser.com/questions/294662/how-to-get-list-of-dependencies-of-non-installed-rpm-package
 
 ## Latex and PDF files
 * [Latex Wikibook](https://en.wikibooks.org/wiki/LaTeX) is a very good start point to learn latex.
@@ -156,6 +186,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * [Overleaf templates](https://www.overleaf.com/latex/templates/): Start your projects with quality LaTeX templates for journals, CVs, resumes, papers, presentations, assignments, letters, project reports, and more. 
 
 * [zotero](https://github.com/zotero/zotero) is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources. It is a useful reference manager which can export `bibtex`.
+
+* [How to use ZOTERO](https://github.com/biodicee/team/wiki/use_zotero)
 
 * [Official repository for Citation Style Language (CSL) citation styles](https://github.com/citation-style-language/styles)
 
@@ -171,6 +203,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * `Markdown` is a lightweight and easy-to-use syntax for styling all forms of writing, which can be converted to various formats, such as Latex, html, pdf, etc.
 	* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 3 minutes read
+
+* [Pandoc filters list](https://github.com/jgm/pandoc/wiki/Pandoc-Filters)
 
 ## Useful data structures and algorithms
 * https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledge on programming.
@@ -188,6 +222,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * [multistate Bennett acceptance ratio (MBAR)](https://github.com/choderalab/pymbar) estimating expectations and free energy differences. Ref: Shirts MR and Chodera JD. Statistically optimal analysis of samples from multiple equilibrium states. J. Chem. Phys. 129:124105 (2008).
 
 * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
+
+* [Network analysis on Python package Dependency](http://kgullikson88.github.io/blog/pypi-analysis.html) (data available for 20k packages)
 
 * https://gist.github.com/nzjrs/990493 shows ways to interface python + C via ctypes or python module extensions.
 
@@ -219,6 +255,8 @@ Here is an example implementation in `Python`
 
 * [tsfresh](https://github.com/blue-yonder/tsfresh) Automatic extraction of relevant features from time series
 
+* Time Series analysis [tsa](http://statsmodels.sourceforge.net/devel/tsa.html)
+
 * [EasyOpenCL](https://github.com/Gladdy/EasyOpenCL) Examples for using `OpenCL` with `C++`. It uses `OpenCL` for GPU-computing.
 
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
@@ -226,3 +264,15 @@ Computation using data flow graphs for scalable machine learning
 
 * [Fast Style Transfer in TensorFlow](https://github.com/lengstrom/fast-style-transfer)
 Add styles from famous paintings to any photo in a fraction of a second! Training takes a much longer time (4-6 hours on a Maxwell Titan X). :star:
+
+* [Image style transfer: history and future](https://research.googleblog.com/2016/10/supercharging-style-transfer.html)
+ Learning and Combining Multiple Styles
+
+* [kmpfit](https://www.astro.rug.nl/software/kapteyn/kmpfittutorial.html)
+provides a complete tutorial on curve fitting, uncertainty estimation of parameters, confidence and prediction intervals for fittings. `kmpfit` is part of the `kapteyn` package, a `Python` module for astronomical applications.
+
+* [Matrix exponential by Pade approximation](https://github.com/rngantner/Pade_PyCpp)
+
+* [Invert Pade approximation back to Taylor series with python](http://math.stackexchange.com/questions/1527557/inverting-the-pade-approximation-going-from-p-mx-q-nx-to-f-mnx)
+
+* [Codes for growing soft solids and crumpling, wrinkling and tearing of thins sheets, developed by Tuomas Tallinen](http://users.jyu.fi/~tutatall/codes.html)
