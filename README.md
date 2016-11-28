@@ -94,6 +94,7 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [pubplot](https://github.com/fengwangPhysics/pubplot) is a `python` module for making publication-quality figures with `matplotlib`.
 
+* Practical Data Visualization [(ppt)](http://www.cs.duke.edu/courses/spring15/compsci216/lectures/09-dataviz.pdf)
 
 ## Crystal defect identification
 * [OVITO](http://ovito.org/) implemented dislocation detection (DXA).
@@ -164,6 +165,11 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 	ref: http://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm
 
+* To extract `deb` package
+	```bash
+	ar p package.deb data.tar.gz | tar xvz --strip-components 2
+	```
+
 * Use the `repoquery` tool from the `yum-utils` package to check `rpm` package dependence
 	```
 	repoquery --requires <package>
@@ -205,6 +211,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 	* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 3 minutes read
 
 * [Pandoc filters list](https://github.com/jgm/pandoc/wiki/Pandoc-Filters)
+
+* [A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 
 ## Useful data structures and algorithms
 * https://github.com/jwasham/google-interview-university gives a lots of well-organized links and learn materials on commonly used data structure, as well as many other basic knowledge on programming.
