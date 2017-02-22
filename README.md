@@ -141,6 +141,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 
 * [Example Python notebooks for data science](https://github.com/donnemartin/data-science-ipython-notebooks)
 
+* [Good tutorial on python for scientific computation](http://people.duke.edu/~ccc14/sta-663-2016/index.html)
+
 * [Some interesting small student projects written in MATLAB on game theory, dynamical system, and other social systems](https://github.com/msssm/interesting_projects/wiki)
 
 * [Deep Learning Papers Reading Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
@@ -222,6 +224,8 @@ uses `matplotlib` to plot statistical figures. Good example for box plot, Stars 
 * [Path to a free self-taught education in Data Science!](https://github.com/open-source-society/data-science)
 
 * [k-d tree](https://en.wikipedia.org/wiki/K-d_tree) is a space-partitioning data structure for organizing points in a k-dimensional space. It is useful to obtain nearest neighbors with an O(log n) complexity. `scipy.spatial.KDTree` and `scipy.spatial.cKDTree` are two very fast implementations in python and C. (https://github.com/prody/ProDy/tree/master/prody/kdtree) has an implementation of kd-tree which can handle periodic boundary condition. A more general algorithm is `cover tree` which can handle any distance metric in arbitrary high dimensional space. There are some C++ cover-tree implementations on github. The speed of the algorithm is very fast: one of implementations claimed that it takes 250 seconds for inserting 10^6 1000-dimensional vectors, and achieves 300 queries per second.
+
+* [Some C/C++ single-file libraries](https://github.com/nothings/single_file_libs) useful for making parts of calculation fast.
 
 * [libccd](https://github.com/danfis/libccd) is a library for collision detection between two convex shapes.
 
